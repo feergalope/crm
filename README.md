@@ -16,8 +16,12 @@ Run the containers:\
 `docker-compose up -d`\
 We use the `-d` flag to run it in background.
 
-Install composer:\
+After run the `build` command:
+1. Install composer:\
 `docker exec -it crm-app composer install`
 
-Run database migrations:\
+2. Run database migrations:\
 `php artisan migrate`
+
+3. Run key generation:\
+`docker exec -it crm-app php artisan key:generate`
