@@ -17,7 +17,7 @@ Run the containers:\
 We use the `-d` flag to run it in background.
 
 Install composer:\
-`docker exec -it app composer install`
+`docker exec -it crm-app composer install`
 
 Run database migrations:\
 `php artisan migrate`

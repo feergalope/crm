@@ -1,6 +1,6 @@
 version: "3.7"
 services:
-  app:
+  crm-app:
     build:
       args:
         user: feergalope
@@ -8,7 +8,7 @@ services:
       context: ./
       dockerfile: Dockerfile
     image: app-image
-    container_name: app
+    container_name: crm-app
     restart: unless-stopped
     working_dir: /var/www/
     volumes:
